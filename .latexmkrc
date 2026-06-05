@@ -13,12 +13,12 @@ $aux_dir = 'build';
 $pdf_mode = 5;
 $xelatex = 'xelatex -interaction=nonstopmode -file-line-error -synctex=1 %O %S';
 
-# 自动运行 BibTeX 或 Biber
-$bibtex_use = 2;   # 自动检测使用 bibtex 或 biber
+# 禁用 BibTeX/Biber
+$bibtex_use = 0;
+$biber = '';
 
 # 监控的额外文件（章节、图表等）
 add_cus_dep('tex', 'pdf', 0, 'do_nothing');  # 防止误触发
-# @default_files = ('main.tex', 'preamble.tex', 'content/*.tex');
 
 # 允许子目录中的图像
 # $ENV{'TEXINPUTS'} = ".:figures//:tables//:";
