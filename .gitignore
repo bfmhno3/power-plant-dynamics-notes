@@ -332,3 +332,6 @@ TSWLatexianTemp*
 
 # Claude Code
 .claude/
+
+# Output directory
+build/
