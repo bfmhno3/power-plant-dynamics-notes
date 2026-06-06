@@ -1,5 +1,7 @@
 \chapter{热传递的基本原理}
 
+\section{思考题}
+
 \begin{problem}
 傅立叶定律说明了什么问题？其数学表达式是怎样的？
 \end{problem}
@@ -129,10 +131,10 @@
 \end{enumerate}
 \end{solution}
 
-\section*{习题}
+\section{习题}
 
 \begin{problem}[锅炉汽包多层平壁导热计算]
-直径很大的某锅炉汽包，其钢板厚度 \(\delta_1 = \qty{140}{\milli\meter}\)，热导率 \(\lambda_1 = \qty{50}{\watt\per\meter\per\degreeCelsius}\)。若钢板内表面上黏附有 \(\delta_2 = \qty{2}{\milli\meter}\)、\(\lambda_2 = \qty{2}{\watt\per\meter\per\degreeCelsius}\) 的水垢层，钢板外表面的温度 \(t_{w1} = \qty{240}{\degreeCelsius}\)，水垢层内表面温度 \(t_{w3} = \qty{300}{\degreeCelsius}\)。试按多层平壁导热近似地求取通过汽包壁的热流密度 \(q\) 及中间界面上的温度 \(t_{w2}\)？
+直径很大的某锅炉汽包，其钢板厚度 \(\delta_1 = \qty{140}{mm}\)，热导率 \(\lambda_1 = \qty{50}{W/(m\cdot\degreeCelsius)}\)。若钢板内表面上黏附有 \(\delta_2 = \qty{2}{mm}\)、\(\lambda_2 = \qty{2}{W/(m\cdot\degreeCelsius)}\) 的水垢层，钢板外表面的温度 \(t_{w1} = \qty{240}{\degreeCelsius}\)，水垢层内表面温度 \(t_{w3} = \qty{300}{\degreeCelsius}\)。试按多层平壁导热近似地求取通过汽包壁的热流密度 \(q\) 及中间界面上的温度 \(t_{w2}\)？
 \end{problem}
 
 \begin{solution}
@@ -145,9 +147,9 @@
   q = \frac{t_{w3} - t_{w1}}{\frac{\delta_2}{\lambda_2} + \frac{\delta_1}{\lambda_1}}
 \end{equation*}
 
-代入已知数据（厚度换算为 \unit{\meter}）：
+代入已知数据（厚度换算为 \unit{m}）：
 \begin{equation*}
-  q = \frac{300 - 240}{\frac{0.002}{2} + \frac{0.14}{50}} = \frac{60}{0.001 + 0.0028} = \frac{60}{0.0038} = \qty{15789.47}{\watt\per\square\meter}
+  q = \frac{300 - 240}{\frac{0.002}{2} + \frac{0.14}{50}} = \frac{60}{0.001 + 0.0028} = \frac{60}{0.0038} = \qty{15789.47}{W/m^2}
 \end{equation*}
 
 \textbf{中间界面温度 \(t_{w2}\)：} 通过水垢层单层测算界面温度：
@@ -162,10 +164,10 @@
 \end{solution}
 
 \begin{problem}[过热器圆筒壁导热计算及强化传热]
-锅炉过热器铬钼合金钢管的管径为 \(\phi \qty{51}{\milli\meter} \times \qty{7}{\milli\meter}\)，热导率 \(\lambda_1 = \qty{32.6}{\watt\per\meter\per\degreeCelsius}\)，内、外壁温分别为 \qty{560}{\degreeCelsius} 和 \qty{580}{\degreeCelsius}，试求：
+锅炉过热器铬钼合金钢管的管径为 \(\phi \qty{51}{mm} \times \qty{7}{mm}\)，热导率 \(\lambda_1 = \qty{32.6}{W/(m\cdot\degreeCelsius)}\)，内、外壁温分别为 \qty{560}{\degreeCelsius} 和 \qty{580}{\degreeCelsius}，试求：
 \begin{enumerate}
   \item 清洁状况下每米管长的热流量；
-  \item 管外壁积灰垢 \qty{1}{\milli\meter}，灰垢热导率 \(\lambda_2 = \qty{0.06}{\watt\per\meter\per\degreeCelsius}\)，其他条件不变时，每米管长的导热量；
+  \item 管外壁积灰垢 \qty{1}{mm}，灰垢热导率 \(\lambda_2 = \qty{0.06}{W/(m\cdot\degreeCelsius)}\)，其他条件不变时，每米管长的导热量；
   \item 如何强化传热？
 \end{enumerate}
 \end{problem}
@@ -174,37 +176,37 @@
 \textbf{参考依据：} PPT 第 15-16 页（长圆筒壁的导热）及第 66 页（传热的强化）。\(\pi\) 取 3.14。
 
 \begin{enumerate}
-  \item \textbf{清洁状况下每米管长热流量 \(q_1\)：} 管内径 \(d_1 = 51 - 2 \times 7 = \qty{37}{\milli\meter} = \qty{0.037}{\meter}\)，管外径 \(d_2 = \qty{51}{\milli\meter} = \qty{0.051}{\meter}\)。
+  \item \textbf{清洁状况下每米管长热流量 \(q_1\)：} 管内径 \(d_1 = 51 - 2 \times 7 = \qty{37}{mm} = \qty{0.037}{m}\)，管外径 \(d_2 = \qty{51}{mm} = \qty{0.051}{m}\)。
   \begin{equation*}
     q_1 = \frac{t_{w2} - t_{w1}}{\frac{1}{2\pi\lambda_1}\ln\frac{d_2}{d_1}}
   \end{equation*}
   \begin{equation*}
-    q_1 = \frac{580 - 560}{\frac{1}{2 \times 3.14 \times 32.6}\ln\frac{0.051}{0.037}} = \frac{20}{0.004884 \times 0.32088} = \qty{12760.3}{\watt\per\meter}
+    q_1 = \frac{580 - 560}{\frac{1}{2 \times 3.14 \times 32.6}\ln\frac{0.051}{0.037}} = \frac{20}{0.004884 \times 0.32088} = \qty{12760.3}{W/m}
   \end{equation*}
 
-  \item \textbf{积灰垢后每米管长导热量 \(q_1'\)：} 积灰垢后外径 \(d_3 = d_2 + 2 \times 1 = \qty{53}{\milli\meter} = \qty{0.053}{\meter}\)。采用双层圆筒壁公式：
+  \item \textbf{积灰垢后每米管长导热量 \(q_1'\)：} 积灰垢后外径 \(d_3 = d_2 + 2 \times 1 = \qty{53}{mm} = \qty{0.053}{m}\)。采用双层圆筒壁公式：
   \begin{equation*}
     q_1' = \frac{t_{w2} - t_{w1}}{\frac{1}{2\pi\lambda_1}\ln\frac{d_2}{d_1} + \frac{1}{2\pi\lambda_2}\ln\frac{d_3}{d_2}}
   \end{equation*}
 
   计算灰垢层热阻：
   \begin{equation*}
-    R_{\text{灰}} = \frac{1}{2 \times 3.14 \times 0.06}\ln\frac{0.053}{0.051} = 2.6539 \times 0.03847 = \qty{0.1021}{\meter\cdot\degreeCelsius\per\watt}
+    R_{\text{灰}} = \frac{1}{2 \times 3.14 \times 0.06}\ln\frac{0.053}{0.051} = 2.6539 \times 0.03847 = \qty{0.1021}{m\cdot\degreeCelsius/W}
   \end{equation*}
 
   计算总导热量：
   \begin{equation*}
-    q_1' = \frac{20}{0.00157 + 0.1021} = \frac{20}{0.10367} = \qty{192.9}{\watt\per\meter}
+    q_1' = \frac{20}{0.00157 + 0.1021} = \frac{20}{0.10367} = \qty{192.9}{W/m}
   \end{equation*}
 
-  （验算可见：\qty{1}{\milli\meter} 的灰垢导致热流量从 12760.3 暴降至 192.9，体现了灰垢极大的热阻）
+  （验算可见：\qty{1}{mm} 的灰垢导致热流量从 12760.3 暴降至 192.9，体现了灰垢极大的热阻）
 
   \item \textbf{如何强化传热？} 根据 PPT 中"强化换热的原则：哪个环节的热阻大，就对哪个环节采取强化措施"。针对本题，最核心的热阻来源于外部的灰垢层（热阻占总热阻的 \(98\%\) 以上）。因此，\textbf{最直接的强化传热手段是定期吹灰、除垢，保持受热面清洁}。
 \end{enumerate}
 \end{solution}
 
 \begin{problem}[省煤器管内强制对流换热计算]
-省煤器蛇形管件由 \(\phi \qty{45}{\milli\meter} \times \qty{6}{\milli\meter}\) 钢管共 \(94 \times 3\) 根并联组成，每小时向汽包提供 \qty{290}{\degreeCelsius} 的给水 \qty{900}{\tonne\per\hour}。若省煤器进水温度为 \qty{260}{\degreeCelsius}，省煤器管内壁平均温度 \(t_w = \qty{300}{\degreeCelsius}\)，试求水侧的表面传热系数及单位管长上的换热量。
+省煤器蛇形管件由 \(\phi \qty{45}{mm} \times \qty{6}{mm}\) 钢管共 \(94 \times 3\) 根并联组成，每小时向汽包提供 \qty{290}{\degreeCelsius} 的给水 \qty{900}{t/h}。若省煤器进水温度为 \qty{260}{\degreeCelsius}，省煤器管内壁平均温度 \(t_w = \qty{300}{\degreeCelsius}\)，试求水侧的表面传热系数及单位管长上的换热量。
 \end{problem}
 
 \begin{solution}
@@ -212,15 +214,15 @@
 
 \textbf{确定流速与物理性质：}
 
-管内径 \(d_1 = 45 - 2 \times 6 = \qty{33}{\milli\meter} = \qty{0.033}{\meter}\)。
+管内径 \(d_1 = 45 - 2 \times 6 = \qty{33}{mm} = \qty{0.033}{m}\)。
 
 流体平均温度 \(t_f = \frac{260 + 290}{2} = \qty{275}{\degreeCelsius}\)。
 
-（查常规物性表：\(\rho \approx \qty{750}{\kilo\gram\per\cubic\meter}\)，\(\lambda \approx \qty{0.57}{\watt\per\meter\per\degreeCelsius}\)，\(\mu \approx \qty{9.7e-5}{\pascal\cdot\second}\)，\(Pr_f \approx 0.86\)，\(t_w = \qty{300}{\degreeCelsius}\) 时 \(Pr_w \approx 0.84\)）
+（查常规物性表：\(\rho \approx \qty{750}{kg/m^3}\)，\(\lambda \approx \qty{0.57}{W/(m\cdot\degreeCelsius)}\)，\(\mu \approx \qty{9.7e-5}{Pa\cdot s}\)，\(Pr_f \approx 0.86\)，\(t_w = \qty{300}{\degreeCelsius}\) 时 \(Pr_w \approx 0.84\)）
 
-流通截面积 \(A = 94 \times 3 \times \frac{\pi}{4} \times 0.033^2 \approx \qty{0.241}{\square\meter}\)。
+流通截面积 \(A = 94 \times 3 \times \frac{\pi}{4} \times 0.033^2 \approx \qty{0.241}{m^2}\)。
 
-流速 \(\omega = \frac{900 \times 10^3 / 3600}{750 \times 0.241} \approx \qty{1.38}{\meter\per\second}\)。
+流速 \(\omega = \frac{900 \times 10^3 / 3600}{750 \times 0.241} \approx \qty{1.38}{m/s}\)。
 
 \textbf{计算 \(Re\) 与 \(Nu\) 准则数：}
 \begin{equation*}
@@ -237,29 +239,29 @@
 
 \textbf{求表面传热系数 \(\alpha\) 和单位管长换热量 \(q_1\)：}
 \begin{equation*}
-  \alpha = \frac{Nu_f \lambda}{d_1} = \frac{542 \times 0.57}{0.033} \approx \qty{9360}{\watt\per\square\meter\per\degreeCelsius}
+  \alpha = \frac{Nu_f \lambda}{d_1} = \frac{542 \times 0.57}{0.033} \approx \qty{9360}{W/(m^2\cdot\degreeCelsius)}
 \end{equation*}
 
 根据牛顿冷却定律化为单位管长换热量：
 \begin{equation*}
-  q_1 = \alpha \pi d_1 (t_w - t_f) = 9360 \times 3.14 \times 0.033 \times (300 - 275) \approx \qty{24240}{\watt\per\meter}
+  q_1 = \alpha \pi d_1 (t_w - t_f) = 9360 \times 3.14 \times 0.033 \times (300 - 275) \approx \qty{24240}{W/m}
 \end{equation*}
 \end{solution}
 
 \begin{problem}[封闭空间系统辐射换热量计算]
-有一外径为 \qty{200}{\milli\meter} 的热水裸管，管道外壁温度 \(t_1 = \qty{180}{\degreeCelsius}\)，黑度 \(\varepsilon_1 = 0.8\)，置于 \(\qty{0.4}{\meter} \times \qty{0.4}{\meter}\) 的正方形地沟中，地沟内表面温度 \(t_2 = \qty{32}{\degreeCelsius}\)，黑度 \(\varepsilon_2 = 0.93\)。求水管单位管长的辐射热损失。
+有一外径为 \qty{200}{mm} 的热水裸管，管道外壁温度 \(t_1 = \qty{180}{\degreeCelsius}\)，黑度 \(\varepsilon_1 = 0.8\)，置于 \(\qty{0.4}{m} \times \qty{0.4}{m}\) 的正方形地沟中，地沟内表面温度 \(t_2 = \qty{32}{\degreeCelsius}\)，黑度 \(\varepsilon_2 = 0.93\)。求水管单位管长的辐射热损失。
 \end{problem}
 
 \begin{solution}
 \textbf{参考依据：} PPT 第 43、44 页（实际物体间的辐射换热计算）和第 45 页（例 3.4）。系统黑度计算常数 \(C_0\) 取 5.67。
 
-\textbf{计算换热面积（取单位管长 \(L = \qty{1}{\meter}\)）：}
+\textbf{计算换热面积（取单位管长 \(L = \qty{1}{m}\)）：}
 
-管道表面积 \(S_1 = \pi d L = 3.14 \times 0.2 \times 1 = \qty{0.628}{\square\meter}\)。
+管道表面积 \(S_1 = \pi d L = 3.14 \times 0.2 \times 1 = \qty{0.628}{m^2}\)。
 
-地沟内表面积 \(S_2 = 4 \times 0.4 \times 1 = \qty{1.6}{\square\meter}\)。
+地沟内表面积 \(S_2 = 4 \times 0.4 \times 1 = \qty{1.6}{m^2}\)。
 
-\textbf{计算辐射热损失 \(Q_{1,2}\)：} 先将摄氏度转化为绝对温度：\(T_1 = 180 + 273 = \qty{453}{\kelvin}\)，\(T_2 = 32 + 273 = \qty{305}{\kelvin}\)。
+\textbf{计算辐射热损失 \(Q_{1,2}\)：} 先将摄氏度转化为绝对温度：\(T_1 = 180 + 273 = \qty{453}{K}\)，\(T_2 = 32 + 273 = \qty{305}{K}\)。
 \begin{equation*}
   Q_{1,2} = \frac{C_0 S_1}{\frac{1}{\varepsilon_1} + \frac{S_1}{S_2}\left(\frac{1}{\varepsilon_2} - 1\right)}\left[\left(\frac{T_1}{100}\right)^4 - \left(\frac{T_2}{100}\right)^4\right]
 \end{equation*}
@@ -267,12 +269,12 @@
   Q_{1,2} = \frac{5.67 \times 0.628}{\frac{1}{0.8} + \frac{0.628}{1.6} \times \left(\frac{1}{0.93} - 1\right)} \times \left[4.53^4 - 3.05^4\right]
 \end{equation*}
 \begin{equation*}
-  Q_{1,2} = \frac{3.5607}{1.25 + 0.3925 \times 0.07527} \times [421.05 - 86.51] = \frac{3.5607}{1.2795} \times 334.54 = \qty{931.0}{\watt\per\meter}
+  Q_{1,2} = \frac{3.5607}{1.25 + 0.3925 \times 0.07527} \times [421.05 - 86.51] = \frac{3.5607}{1.2795} \times 334.54 = \qty{931.0}{W/m}
 \end{equation*}
 \end{solution}
 
 \begin{problem}[抽汽管道保温层复合换热计算]
-汽轮机抽汽管道 \(\phi \qty{80}{\milli\meter} \times \qty{3}{\milli\meter}\)，热导率 \(\lambda_1 = \qty{53.7}{\watt\per\meter\per\degreeCelsius}\)；管外敷设厚度为 \qty{40}{\milli\meter} 的水泥珍珠岩保温层，其热导率 \(\lambda_2 = \qty{0.075}{\watt\per\meter\per\degreeCelsius}\)；管内蒸汽平均温度 \(t_{f1} = \qty{150}{\degreeCelsius}\)，与内壁的表面传热系数 \(\alpha_1 = \qty{116}{\watt\per\square\meter\per\degreeCelsius}\)；管外环境温度 \(t_{f2} = \qty{20}{\degreeCelsius}\)，保温层与环境的表面传热系数 \(\alpha_2 = \qty{7.6}{\watt\per\square\meter\per\degreeCelsius}\)，求每米管长的散热损失。
+汽轮机抽汽管道 \(\phi \qty{80}{mm} \times \qty{3}{mm}\)，热导率 \(\lambda_1 = \qty{53.7}{W/(m\cdot\degreeCelsius)}\)；管外敷设厚度为 \qty{40}{mm} 的水泥珍珠岩保温层，其热导率 \(\lambda_2 = \qty{0.075}{W/(m\cdot\degreeCelsius)}\)；管内蒸汽平均温度 \(t_{f1} = \qty{150}{\degreeCelsius}\)，与内壁的表面传热系数 \(\alpha_1 = \qty{116}{W/(m^2\cdot\degreeCelsius)}\)；管外环境温度 \(t_{f2} = \qty{20}{\degreeCelsius}\)，保温层与环境的表面传热系数 \(\alpha_2 = \qty{7.6}{W/(m^2\cdot\degreeCelsius)}\)，求每米管长的散热损失。
 \end{problem}
 
 \begin{solution}
@@ -280,11 +282,11 @@
 
 \textbf{确定各层直径：}
 
-内壁直径 \(d_1 = 80 - 2 \times 3 = \qty{74}{\milli\meter} = \qty{0.074}{\meter}\)。
+内壁直径 \(d_1 = 80 - 2 \times 3 = \qty{74}{mm} = \qty{0.074}{m}\)。
 
-外壁直径 \(d_2 = \qty{80}{\milli\meter} = \qty{0.08}{\meter}\)。
+外壁直径 \(d_2 = \qty{80}{mm} = \qty{0.08}{m}\)。
 
-保温层外表面直径 \(d_3 = 80 + 2 \times 40 = \qty{160}{\milli\meter} = \qty{0.16}{\meter}\)。
+保温层外表面直径 \(d_3 = 80 + 2 \times 40 = \qty{160}{mm} = \qty{0.16}{m}\)。
 
 \textbf{计算单位管长的总传热系数 \(k_l\)（此步骤严格对齐例3.5算法）：}
 \begin{equation*}
@@ -293,19 +295,19 @@
 
 各项热阻分布计算：
 
-内部对流热阻 \(= \frac{1}{116 \times 3.14 \times 0.074} = \qty{0.0371}{\meter\cdot\degreeCelsius\per\watt}\)
+内部对流热阻 \(= \frac{1}{116 \times 3.14 \times 0.074} = \qty{0.0371}{m\cdot\degreeCelsius/W}\)
 
-管壁导热热阻 \(= \frac{\ln(0.08/0.074)}{2 \times 3.14 \times 53.7} = \qty{0.0002}{\meter\cdot\degreeCelsius\per\watt}\)
+管壁导热热阻 \(= \frac{\ln(0.08/0.074)}{2 \times 3.14 \times 53.7} = \qty{0.0002}{m\cdot\degreeCelsius/W}\)
 
-保温层导热热阻 \(= \frac{\ln(0.16/0.08)}{2 \times 3.14 \times 0.075} = \qty{1.4717}{\meter\cdot\degreeCelsius\per\watt}\)
+保温层导热热阻 \(= \frac{\ln(0.16/0.08)}{2 \times 3.14 \times 0.075} = \qty{1.4717}{m\cdot\degreeCelsius/W}\)
 
-外部对流热阻 \(= \frac{1}{7.6 \times 3.14 \times 0.16} = \qty{0.2619}{\meter\cdot\degreeCelsius\per\watt}\)
+外部对流热阻 \(= \frac{1}{7.6 \times 3.14 \times 0.16} = \qty{0.2619}{m\cdot\degreeCelsius/W}\)
 \begin{equation*}
-  k_l = \frac{1}{0.0371 + 0.0002 + 1.4717 + 0.2619} = \frac{1}{1.7709} = \qty{0.5647}{\watt\per\meter\per\degreeCelsius}
+  k_l = \frac{1}{0.0371 + 0.0002 + 1.4717 + 0.2619} = \frac{1}{1.7709} = \qty{0.5647}{W/(m\cdot\degreeCelsius)}
 \end{equation*}
 
 \textbf{求每米管长的散热损失 \(q\)：}
 \begin{equation*}
-  q = k_l (t_{f1} - t_{f2}) = 0.5647 \times (150 - 20) = \qty{73.41}{\watt\per\meter}
+  q = k_l (t_{f1} - t_{f2}) = 0.5647 \times (150 - 20) = \qty{73.41}{W/m}
 \end{equation*}
 \end{solution}

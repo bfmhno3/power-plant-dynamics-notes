@@ -34,7 +34,7 @@
 
 \begin{solution}
 \begin{enumerate}
-  \item \textbf{热力学第一定律}：揭示了能量既可转换又要守恒，主要解决热变功过程的\textbf{数量计算}问题（即 energy 之间数量转换的关系）。
+  \item \textbf{热力学第一定律}：揭示了能量既可转换又要守恒，主要解决热变功过程的\textbf{数量计算}问题（即能量之间数量转换的关系）。
   \item \textbf{热力学第二定律}：揭示了能量转换具有方向性、条件和限度，主要解决热变功过程的\textbf{方向}问题（即自发过程不可逆，解释了能量不仅有数量守恒，更具有品位和转化方向）。
 \end{enumerate}
 \end{solution}
@@ -67,7 +67,7 @@
 \section{习题}
 
 \begin{problem}[绝对压强的计算]
-某亚临界压力机组由运行表计读取到下列表压力数据：锅炉过热器出口蒸汽压力 \qty{18.3}{\mega\pascal}；汽轮机高压缸进汽压力 \qty{16.7}{\mega\pascal}；汽轮机中压缸进汽压力 \qty{3.78}{\mega\pascal}；凝汽器的真空 \qty{5.39}{\kilo\pascal}；炉膛内负压 \qty{58.8}{\pascal}。当地大气压力为 \qty{100.6}{\kilo\pascal}。试求相应的绝对压力值。
+某亚临界压力机组由运行表计读取到下列表压力数据：锅炉过热器出口蒸汽压力 \qty{18.3}{MPa}；汽轮机高压缸进汽压力 \qty{16.7}{MPa}；汽轮机中压缸进汽压力 \qty{3.78}{MPa}；凝汽器的真空 \qty{5.39}{kPa}；炉膛内负压 \qty{58.8}{Pa}。当地大气压力为 \qty{100.6}{kPa}。试求相应的绝对压力值。
 \end{problem}
 
 \begin{solution}
@@ -80,38 +80,38 @@
 
 \textbf{计算验算：}
 
-已知当地大气压 \(p_b\) = \qty{100.6}{\kilo\pascal} = \qty{0.1006}{\mega\pascal}。
+已知当地大气压 \(p_b\) = \qty{100.6}{kPa} = \qty{0.1006}{MPa}。
 
 \textbf{锅炉过热器出口：}
 \begin{equation*}
-p_{\text{abs}} = 0.1006 + 18.3 = \qty{18.4006}{\mega\pascal}
+p_{\text{abs}} = 0.1006 + 18.3 = \qty{18.4006}{MPa}
 \end{equation*}
 
 \textbf{汽轮机高压缸进汽：}
 \begin{equation*}
-p_{\text{abs}} = 0.1006 + 16.7 = \qty{16.8006}{\mega\pascal}
+p_{\text{abs}} = 0.1006 + 16.7 = \qty{16.8006}{MPa}
 \end{equation*}
 
 \textbf{汽轮机中压缸进汽：}
 \begin{equation*}
-p_{\text{abs}} = 0.1006 + 3.78 = \qty{3.8806}{\mega\pascal}
+p_{\text{abs}} = 0.1006 + 3.78 = \qty{3.8806}{MPa}
 \end{equation*}
 
 \textbf{凝汽器：}
 \begin{equation*}
-p_{\text{abs}} = 100.6 - 5.39 = \qty{95.21}{\kilo\pascal}
+p_{\text{abs}} = 100.6 - 5.39 = \qty{95.21}{kPa}
 \end{equation*}
 
 \textbf{炉膛：}
 
-注意单位统一，负压 \(p_v\) = \qty{58.8}{\pascal} = \qty{0.0588}{\kilo\pascal}。
+注意单位统一，负压 \(p_v\) = \qty{58.8}{Pa} = \qty{0.0588}{kPa}。
 \begin{equation*}
-p_{\text{abs}} = 100.6 - 0.0588 = \qty{100.5412}{\kilo\pascal}
+p_{\text{abs}} = 100.6 - 0.0588 = \qty{100.5412}{kPa}
 \end{equation*}
 \end{solution}
 
 \begin{problem}[发电厂日耗煤量计算]
-装机容量 \qty{800}{\mega\watt} 的发电厂，供给发热量为 \qty{23500}{\kilo\joule\per\kilo\gram} 的煤种，若燃料完全燃烧，产生热量的 \(38\%\) 可以转换成电能，试求该厂输煤系统每昼夜应提供燃煤多少吨？
+装机容量 \qty{800}{MW} 的发电厂，供给发热量为 \qty{23500}{kJ/kg} 的煤种，若燃料完全燃烧，产生热量的 \(38\%\) 可以转换成电能，试求该厂输煤系统每昼夜应提供燃煤多少吨？
 \end{problem}
 
 \begin{solution}
@@ -121,7 +121,7 @@ p_{\text{abs}} = 100.6 - 0.0588 = \qty{100.5412}{\kilo\pascal}
 
 \textbf{计算每昼夜（24小时）发出的总电能：}
 
-发电机功率 \(P\) = \qty{800}{\mega\watt} = \qty{800000}{\kilo\watt} = \qty{800000}{\kilo\joule\per\second}。
+发电机功率 \(P\) = \qty{800}{MW} = \qty{800000}{kW} = \qty{800000}{kJ/s}。
 
 一昼夜总电能
 \begin{equation*}
@@ -139,14 +139,14 @@ p_{\text{abs}} = 100.6 - 0.0588 = \qty{100.5412}{\kilo\pascal}
 
 燃煤质量
 \begin{equation*}
-  m = \frac{Q}{\text{发热量}} = \frac{181894736842}{23500} \approx \qty{7740201}{\kilo\gram} = \qty{7740.2}{t}
+  m = \frac{Q}{\text{发热量}} = \frac{181894736842}{23500} \approx \qty{7740201}{kg} = \qty{7740.2}{t}
 \end{equation*}
 
-\textbf{答：} 该厂输煤系统每昼夜约需提供燃煤 \qty{7740.2}{\tonne}。
+\textbf{答：} 该厂输煤系统每昼夜约需提供燃煤 \qty{7740.2}{t}。
 \end{solution}
 
 \begin{problem}[汽轮机内部功率计算]
-如果某凝汽式汽轮机的进汽焓值为 \qty{3458}{\kilo\joule\per\kilo\gram}，进汽流速为 \qty{50}{\meter\per\second}；汽轮机的排汽焓值为 \qty{2428}{\kilo\joule\per\kilo\gram}，排汽流速为 \qty{150}{\meter\per\second}。每小时蒸汽流量为 \qty{360}{\tonne\per\hour}，进出口势能差可忽略，试求绝热过程中该汽轮机输出的内部功率为多少千瓦？
+如果某凝汽式汽轮机的进汽焓值为 \qty{3458}{kJ/kg}，进汽流速为 \qty{50}{m/s}；汽轮机的排汽焓值为 \qty{2428}{kJ/kg}，排汽流速为 \qty{150}{m/s}。每小时蒸汽流量为 \qty{360}{t/h}，进出口势能差可忽略，试求绝热过程中该汽轮机输出的内部功率为多少千瓦？
 \end{problem}
 
 \begin{solution}
@@ -170,11 +170,11 @@ p_{\text{abs}} = 100.6 - 0.0588 = \qty{100.5412}{\kilo\pascal}
 
 \textbf{动能单位换算（关键点）：}
 
-动能项计算出的单位是 \unit{\joule\per\kilo\gram}，而比焓的单位是 \unit{\kilo\joule\per\kilo\gram}，必须统一。
+动能项计算出的单位是 \unit{J/kg}，而比焓的单位是 \unit{kJ/kg}，必须统一。
 
 \begin{itemize}
-  \item 进口动能：\(\frac{1}{2}c_1^2 = 0.5 \times 50^2 = \qty{1250}{\joule\per\kilo\gram} = \qty{1.25}{\kilo\joule\per\kilo\gram}\)
-  \item 出口动能：\(\frac{1}{2}c_2^2 = 0.5 \times 150^2 = \qty{11250}{\joule\per\kilo\gram} = \qty{11.25}{\kilo\joule\per\kilo\gram}\)
+  \item 进口动能：\(\frac{1}{2}c_1^2 = 0.5 \times 50^2 = \qty{1250}{J/kg} = \qty{1.25}{kJ/kg}\)
+  \item 出口动能：\(\frac{1}{2}c_2^2 = 0.5 \times 150^2 = \qty{11250}{J/kg} = \qty{11.25}{kJ/kg}\)
 \end{itemize}
 
 \textbf{计算单位质量蒸汽作功：}
@@ -186,8 +186,8 @@ p_{\text{abs}} = 100.6 - 0.0588 = \qty{100.5412}{\kilo\pascal}
 
 蒸汽质量流量 \(m_q = \qty{360}{t/h} = \qty{100}{kg/s}\)。
 \begin{equation*}
-  P = m_q \times w_s = 100 \times 1020 = \qty{102000}{\kilo\watt}
+  P = m_q \times w_s = 100 \times 1020 = \qty{102000}{kW}
 \end{equation*}
 
-\textbf{答：} 该汽轮机输出的内部功率为 \qty{102000}{\kilo\watt}（即 \qty{102}{\mega\watt}）。
+\textbf{答：} 该汽轮机输出的内部功率为 \qty{102000}{kW}（即 \qty{102}{MW}）。
 \end{solution}
