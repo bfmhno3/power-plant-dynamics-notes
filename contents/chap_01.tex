@@ -1,5 +1,7 @@
 \chapter{热力学基本概念与基本定律}
 
+\section{思考题}
+
 \begin{problem}
 热力系的几种类型之间有何联系与区别？
 \end{problem}
@@ -60,4 +62,132 @@
   \item 证明了卡诺循环热机效率仅取决于恒温热源的高温（\(T_{1}\)）和低温（\(T_{2}\)），而与工质的具体性质无关。
   \item 对热力学第二定律的建立具有重大意义。
 \end{enumerate}
+\end{solution}
+
+\section{习题}
+
+\begin{problem}[绝对压强的计算]
+某亚临界压力机组由运行表计读取到下列表压力数据：锅炉过热器出口蒸汽压力 \qty{18.3}{\mega\pascal}；汽轮机高压缸进汽压力 \qty{16.7}{\mega\pascal}；汽轮机中压缸进汽压力 \qty{3.78}{\mega\pascal}；凝汽器的真空 \qty{5.39}{\kilo\pascal}；炉膛内负压 \qty{58.8}{\pascal}。当地大气压力为 \qty{100.6}{\kilo\pascal}。试求相应的绝对压力值。
+\end{problem}
+
+\begin{solution}
+\textbf{理论依据（参考 PPT 第10-11页）：} 根据压强的量度基准不同，压强可用绝对压强和相对压强表示。
+
+\begin{itemize}
+  \item 当绝对压强高于当地大气压时，公式为：\(p_{\text{abs}} = p_b + p_g\)。
+  \item 当绝对压强低于当地大气压时，测量表（真空表）的读数为真空度 \(p_v\)。此时的计算逻辑为绝对压强等于大气压减去真空度（或负压），即 \(p_{\text{abs}} = p_b - p_v\)。
+\end{itemize}
+
+\textbf{计算验算：}
+
+已知当地大气压 \(p_b\) = \qty{100.6}{\kilo\pascal} = \qty{0.1006}{\mega\pascal}。
+
+\textbf{锅炉过热器出口：}
+\begin{equation*}
+p_{\text{abs}} = 0.1006 + 18.3 = \qty{18.4006}{\mega\pascal}
+\end{equation*}
+
+\textbf{汽轮机高压缸进汽：}
+\begin{equation*}
+p_{\text{abs}} = 0.1006 + 16.7 = \qty{16.8006}{\mega\pascal}
+\end{equation*}
+
+\textbf{汽轮机中压缸进汽：}
+\begin{equation*}
+p_{\text{abs}} = 0.1006 + 3.78 = \qty{3.8806}{\mega\pascal}
+\end{equation*}
+
+\textbf{凝汽器：}
+\begin{equation*}
+p_{\text{abs}} = 100.6 - 5.39 = \qty{95.21}{\kilo\pascal}
+\end{equation*}
+
+\textbf{炉膛：}
+
+注意单位统一，负压 \(p_v\) = \qty{58.8}{\pascal} = \qty{0.0588}{\kilo\pascal}。
+\begin{equation*}
+p_{\text{abs}} = 100.6 - 0.0588 = \qty{100.5412}{\kilo\pascal}
+\end{equation*}
+\end{solution}
+
+\begin{problem}[发电厂日耗煤量计算]
+装机容量 \qty{800}{\mega\watt} 的发电厂，供给发热量为 \qty{23500}{\kilo\joule\per\kilo\gram} 的煤种，若燃料完全燃烧，产生热量的 \(38\%\) 可以转换成电能，试求该厂输煤系统每昼夜应提供燃煤多少吨？
+\end{problem}
+
+\begin{solution}
+\textbf{理论依据（参考 PPT 第14页、26页）：} 依据热力学第一定律的实质，不同能量之间可以相互转换，且转换过程中总能量是守恒的。发电厂的能量转换即是将燃料释放的总热量，按一定效率转化为电能（有用功）。
+
+\textbf{计算验算：}
+
+\textbf{计算每昼夜（24小时）发出的总电能：}
+
+发电机功率 \(P\) = \qty{800}{\mega\watt} = \qty{800000}{\kilo\watt} = \qty{800000}{\kilo\joule\per\second}。
+
+一昼夜总电能
+\begin{equation*}
+  W_{\text{elec}} = 800000 \times 24 \times 3600 = \qty{69120000000}{kJ}
+\end{equation*}
+
+\textbf{计算所需的燃料总热量：}
+
+根据热效率 \(38\%\)，所需总热量
+\begin{equation*}
+  Q = \frac{69120000000}{0.38} \approx \qty{181894736842}{kJ}
+\end{equation*}
+
+\textbf{计算燃煤量：}
+
+燃煤质量
+\begin{equation*}
+  m = \frac{Q}{\text{发热量}} = \frac{181894736842}{23500} \approx \qty{7740201}{\kilo\gram} = \qty{7740.2}{t}
+\end{equation*}
+
+\textbf{答：} 该厂输煤系统每昼夜约需提供燃煤 \qty{7740.2}{\tonne}。
+\end{solution}
+
+\begin{problem}[汽轮机内部功率计算]
+如果某凝汽式汽轮机的进汽焓值为 \qty{3458}{\kilo\joule\per\kilo\gram}，进汽流速为 \qty{50}{\meter\per\second}；汽轮机的排汽焓值为 \qty{2428}{\kilo\joule\per\kilo\gram}，排汽流速为 \qty{150}{\meter\per\second}。每小时蒸汽流量为 \qty{360}{\tonne\per\hour}，进出口势能差可忽略，试求绝热过程中该汽轮机输出的内部功率为多少千瓦？
+\end{problem}
+
+\begin{solution}
+\textbf{理论依据（参考 PPT 第22-24页）：} 本题属于开口系的热力学第一定律解析式（稳定流动能量方程式）的应用。系统能量守恒公式为：
+\begin{equation*}
+  u_1 + \frac{1}{2}c_1^2 + g z_1 + p_1 v_1 + q = u_2 + \frac{1}{2}c_2^2 + g z_2 + p_2 v_2 + w_s
+\end{equation*}
+代入比焓的定义式 \(h = u + pv\)，并根据题意进行条件化简：
+
+\begin{itemize}
+  \item \textbf{绝热过程：} 与外界无热量交换，加入热量 \(q = 0\)。
+  \item \textbf{忽略势能差：} \(g z_1 = g z_2\)。
+\end{itemize}
+
+化简后，求轴功（单位质量输出功）的公式变为：
+\begin{equation*}
+  w_s = (h_1 - h_2) + \left(\frac{1}{2}c_1^2 - \frac{1}{2}c_2^2\right)
+\end{equation*}
+
+\textbf{计算验算：}
+
+\textbf{动能单位换算（关键点）：}
+
+动能项计算出的单位是 \unit{\joule\per\kilo\gram}，而比焓的单位是 \unit{\kilo\joule\per\kilo\gram}，必须统一。
+
+\begin{itemize}
+  \item 进口动能：\(\frac{1}{2}c_1^2 = 0.5 \times 50^2 = \qty{1250}{\joule\per\kilo\gram} = \qty{1.25}{\kilo\joule\per\kilo\gram}\)
+  \item 出口动能：\(\frac{1}{2}c_2^2 = 0.5 \times 150^2 = \qty{11250}{\joule\per\kilo\gram} = \qty{11.25}{\kilo\joule\per\kilo\gram}\)
+\end{itemize}
+
+\textbf{计算单位质量蒸汽作功：}
+\begin{equation*}
+  w_s = (3458 - 2428) + (1.25 - 11.25) = 1030 - 10 = \qty{1020}{kJ/kg}
+\end{equation*}
+
+\textbf{计算汽轮机总内部功率：}
+
+蒸汽质量流量 \(m_q = \qty{360}{t/h} = \qty{100}{kg/s}\)。
+\begin{equation*}
+  P = m_q \times w_s = 100 \times 1020 = \qty{102000}{\kilo\watt}
+\end{equation*}
+
+\textbf{答：} 该汽轮机输出的内部功率为 \qty{102000}{\kilo\watt}（即 \qty{102}{\mega\watt}）。
 \end{solution}

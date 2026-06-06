@@ -99,3 +99,178 @@
   \end{enumerate}
 \end{enumerate}
 \end{solution}
+
+\section*{习题}
+
+\begin{problem}
+泵只能对液态水进行加压。如果锅炉给水温度为 \qty{264}{\degreeCelsius}，水泵入口水的压力至少要大于多少兆帕？当给水泵出口压力为 \qty{17}{\mega\pascal} 时，水处于什么状态？水在 \qty{17}{\mega\pascal} 定压力下，送入锅炉受热面定压加热，当水温上升 \qty{70}{\degreeCelsius} 时，水处于什么状态？当水中产生 \(20\%\) 蒸汽时，处于什么状态？温度是多少？继续定压加热到什么状态时温度才开始上升？当温度达到 \qty{545}{\degreeCelsius} 时，处于什么状态？具有多大的过热度？
+\end{problem}
+
+\begin{solution}
+（参考 PPT \textbf{【例 2.1】}）
+
+\begin{itemize}
+  \item \textbf{入口压力}：查附表可知，当饱和温度 \(t_s = \qty{264}{\degreeCelsius}\) 时，给水泵入口压力至少应大于此温度对应的饱和压力 \(p_s\)。经查表换算，压力至少要大于 \qty{5.05}{\mega\pascal}。
+  \item \textbf{给水泵出口状态}：当压力为 \qty{17}{\mega\pascal} 时，其对应的饱和温度 \(t_s \approx \qty{352.37}{\degreeCelsius}\)。因为实际给水温度 \qty{264}{\degreeCelsius} \(< t_s\)，故水处于\textbf{过冷水状态}。
+  \item \textbf{水温上升 70°C}：加热后温度为 \qty{334}{\degreeCelsius}。因为 \qty{334}{\degreeCelsius} \(< t_s\)，此时水仍处于\textbf{过冷水状态}。
+  \item \textbf{产生 20\% 蒸汽}：当给水中产生蒸汽时（干度 \(x = 0.2\)），水处于\textbf{湿饱和蒸汽状态}。此时温度恒等于饱和温度，即 \qty{352.37}{\degreeCelsius}。
+  \item \textbf{温度开始上升的节点}：继续定压加热，当液态水完全汽化，达到\textbf{干饱和蒸汽状态}（即工质焓值达到相应压力下的干饱和蒸汽焓 \(h''\)，约为 \qty{2532.6}{\kilo\joule\per\kilo\gram}）时，其温度才开始升高。
+  \item \textbf{达到 545°C 的状态与过热度}：此时工质温度超过饱和温度，处于\textbf{过热蒸汽状态}。其过热度为
+  \begin{equation*}
+    D = t - t_s = 545 - 352.37 = \qty{192.63}{\degreeCelsius}
+  \end{equation*}
+\end{itemize}
+\end{solution}
+
+\begin{problem}
+某电站锅炉参数如下，高压锅炉是：锅炉出口过热蒸汽压力 \(p_1 = \qty{10}{\mega\pascal}\)，温度 \(t_1 = \qty{540}{\degreeCelsius}\)，给水温度 \(t_2 = \qty{220}{\degreeCelsius}\)；亚临界压力锅炉是：\(p_1 = \qty{17}{\mega\pascal}\)，\(t_1 = \qty{540}{\degreeCelsius}\)，\(t_2 = \qty{260}{\degreeCelsius}\)。按定压加热，分别将炉内加热过程定性地描绘在 \(T\)-\(s\) 图上，并比较其预热热、汽化潜热和过热热因 \(p_1\) 不同所造成的变化趋势。
+\end{problem}
+
+\begin{solution}
+（参考 PPT 中 \textbf{\(T\)-\(s\) 图}及定压加热过程规律）
+
+在 \(T\)-\(s\) 图上，这两个加热过程均沿定压线向右上侧延伸，经过预冷水、湿饱和蒸汽区，最终到达同为 \qty{540}{\degreeCelsius} 的过热区。当 \(p_1\) 从 \qty{10}{\mega\pascal} 提高到 \qty{17}{\mega\pascal} 时，各部分热量变化趋势如下：
+
+\begin{itemize}
+  \item \textbf{预热热（\(q'\)）增加}：随着压力升高，饱和水线（MC）整体向右上方偏移，饱和温度 \(t_s\) 随之升高，将水从过冷态加热至饱和水状态所需的预热热线下面积显著增大。
+  \item \textbf{汽化潜热（\(r\)）减小}：在 \(T\)-\(s\) 图中，随着压力升高并逼近临界点，饱和水线与干饱和蒸汽线（NC）之间的水平距离收缩，导致汽化过程线下的面积（潜热）减小。
+  \item \textbf{过热热（\(q''\)）减小}：由于两者的终点过热温度相同（均为 \qty{540}{\degreeCelsius}），但亚临界锅炉的饱和温度 \(t_s\) 更高，导致将蒸汽加热到规定温度所需的过热温差缩小。因此，过热过程线下的面积减小。
+\end{itemize}
+\end{solution}
+
+\begin{problem}
+如在汽轮机的某级中，蒸汽以 \(p_1 = \qty{0.5}{\mega\pascal}\)，\(t_1 = \qty{230}{\degreeCelsius}\) 进入喷管，喷管的背压 \(p_b = \qty{0.4}{\mega\pascal}\)，蒸汽流量为 \qty{25}{\tonne\per\hour}，试问应选择何种型式的喷管？并计算喷管出口的流速 \(c_2\) 和喷管出口截面积 \(S_2\)。
+\end{problem}
+
+\begin{solution}
+（参考 PPT \textbf{【例 2.3】}与\textbf{通过喷管的绝热流动}）
+
+\begin{itemize}
+  \item \textbf{喷管型式选择}：已知初始状态为过热蒸汽，过热蒸汽的临界压力比 \(\beta_c = 0.546\)。实际的压力比为 \(p_2/p_1 = 0.4 / 0.5 = 0.8\)。因为 \(0.8 > 0.546\)，喷管出口只能获得亚音速，故必须选用\textbf{渐缩形喷管}。
+
+  \item \textbf{出口流速 \(c_2\)}：忽略初速度，根据绝热流动能量方程，流速计算公式为 \(c_2 = 44.72\sqrt{h_1 - h_2}\)。
+
+  查表得 \(p_1 = \qty{0.5}{\mega\pascal}\)，\(t_1 = \qty{230}{\degreeCelsius}\) 时，初焓 \(h_1 \approx \qty{2918}{\kilo\joule\per\kilo\gram}\)，熵 \(s_1 \approx \qty{7.059}{\kilo\joule\per\kilo\gram\per\kelvin}\)。
+
+  沿等熵过程绝热膨胀至 \(p_2 = \qty{0.4}{\mega\pascal}\)，查表得出口焓 \(h_2 \approx \qty{2820}{\kilo\joule\per\kilo\gram}\)，比容 \(v_2 \approx \qty{0.52}{\cubic\meter\per\kilo\gram}\)。
+
+  代入公式验算得：
+  \begin{equation*}
+    c_2 = 44.72\sqrt{2918 - 2820} \approx \qty{442}{\meter\per\second}
+  \end{equation*}
+
+  \item \textbf{出口截面积 \(S_2\)}：蒸汽的质量流量 \(q_m = 25 \times 10^3 / 3600 \approx \qty{6.94}{\kilo\gram\per\second}\)。
+
+  截面积公式计算：
+  \begin{equation*}
+    S_2 = \frac{q_m \cdot v_2}{c_2} = \frac{6.94 \times 0.52}{442} \approx \qty{0.00817}{\square\meter}
+  \end{equation*}
+  （即 \qty{81.7}{\square\centi\meter}）。
+\end{itemize}
+\end{solution}
+
+\begin{problem}
+若基本朗肯循环的初参数 \(p_1 = \qty{13.5}{\mega\pascal}\)，\(t_1 = \qty{550}{\degreeCelsius}\)，凝汽器压力 \(p_2 = \qty{5}{\kilo\pascal}\)，不计水泵功。试求：
+\begin{enumerate}
+  \item 该循环的 \(w_0\)、\(q_1\)、\(x\)、\(\eta_t\)；
+  \item 如果工质在汽轮机内膨胀到 \qty{3.5}{\mega\pascal} 时，再去加热到 \qty{550}{\degreeCelsius}，此再热循环的 \(w_0\)、\(q_1\)、\(x\)、\(\eta_{TR}\)；
+  \item 比较两种循环方式下的热效率和乏汽干度。
+\end{enumerate}
+\end{problem}
+
+\begin{solution}
+（参考 PPT \textbf{【例 2.4】}与\textbf{【例 2.5】}）
+
+\begin{enumerate}
+  \item \textbf{基本朗肯循环}：
+  \begin{itemize}
+    \item \textbf{计算方法}：循环作功 \(w_0 = h_1 - h_2\)，吸热量 \(q_1 = h_1 - h_3\)（忽略水泵功），热效率 \(\eta_T = \frac{h_1 - h_2}{h_1 - h_3}\)。
+    \item \textbf{参数验算}：查表得初态 \(h_1 \approx \qty{3447}{\kilo\joule\per\kilo\gram}\)，\(s_1 \approx \qty{6.54}{\kilo\joule\per\kilo\gram\per\kelvin}\)。等熵膨胀至 \qty{5}{\kilo\pascal}，查得排汽干度 \(x \approx 0.766\)，排汽焓 \(h_2 \approx \qty{1994}{\kilo\joule\per\kilo\gram}\)，饱和水焓 \(h_3 \approx \qty{138}{\kilo\joule\per\kilo\gram}\)。
+    \item \textbf{结果}：
+    \begin{equation*}
+      w_0 = 3447 - 1994 = \qty{1453}{\kilo\joule\per\kilo\gram}
+    \end{equation*}
+    \begin{equation*}
+      q_1 = 3447 - 138 = \qty{3309}{\kilo\joule\per\kilo\gram}
+    \end{equation*}
+    \begin{equation*}
+      \eta_t = \frac{1453}{3309} \approx 43.9\%
+    \end{equation*}
+  \end{itemize}
+
+  \item \textbf{再热循环}：
+  \begin{itemize}
+    \item \textbf{计算方法}：从高压缸排汽点 \(b\) 抽汽再热至点 \(a\)。净功 \(w_{\text{net}} = (h_1 - h_b) + (h_a - h_2)\)，吸热量 \(q_1 = (h_1 - h_4) + (h_a - h_b)\)，再热循环热效率 \(\eta_{t,RH} = \frac{w_{\text{net}}}{q_1}\)。
+    \item \textbf{参数验算}：工质等熵膨胀至 \qty{3.5}{\mega\pascal} 时，查得 \(h_b \approx \qty{3020}{\kilo\joule\per\kilo\gram}\)。再热至 \qty{550}{\degreeCelsius} 后，\(h_a \approx \qty{3568}{\kilo\joule\per\kilo\gram}\)。等熵膨胀至 \qty{5}{\kilo\pascal}，新排汽干度 \(x \approx 0.86\)，排汽焓 \(h_2 \approx \qty{2221}{\kilo\joule\per\kilo\gram}\)。
+    \item \textbf{结果}：
+    \begin{equation*}
+      w_{\text{net}} = (3447 - 3020) + (3568 - 2221) = \qty{1774}{\kilo\joule\per\kilo\gram}
+    \end{equation*}
+    \begin{equation*}
+      q_1 = (3447 - 138) + (3568 - 3020) = \qty{3857}{\kilo\joule\per\kilo\gram}
+    \end{equation*}
+    \begin{equation*}
+      \eta_{TR} = \frac{1774}{3857} \approx 46.0\%
+    \end{equation*}
+  \end{itemize}
+
+  \item \textbf{比较结论}：
+  \begin{itemize}
+    \item 采用一次中间再热后，\textbf{循环热效率得到了提高}（\(46.0\% > 43.9\%\)）。
+    \item \textbf{乏汽干度显著改善}（从 \(0.766\) 提升至 \(0.86\)），这不仅为进一步提高初压创造了条件，也降低了末级叶片的水滴冲蚀，对汽轮机的安全运行极为有利。
+  \end{itemize}
+\end{enumerate}
+\end{solution}
+
+\begin{problem}
+设有两级抽汽回热循环，其参数 \(p_1 = \qty{10}{\mega\pascal}\)，\(t_1 = \qty{540}{\degreeCelsius}\)，凝汽器压力 \(p_2 = \qty{5}{\kilo\pascal}\)，汽轮机第一级、第二级抽汽压力分别为 \(p_{01} = \qty{0.4}{\mega\pascal}\) 和 \(p_{02} = \qty{0.21}{\mega\pascal}\)。试求该两级回热循环的汽轮机内功和循环热效率。
+\end{problem}
+
+\begin{solution}
+（参考 PPT \textbf{两级抽汽回热循环的热效率}）
+
+\begin{itemize}
+  \item \textbf{建立回热器热量与质量平衡}：假设进入汽轮机的新蒸汽为 \qty{1}{\kilo\gram}，分别抽出质量比例为 \(\alpha_1\) 和 \(\alpha_2\) 的蒸汽送入 I 级和 II 级回热加热器中。
+
+  根据混合式回热器的热平衡方程：
+  \begin{itemize}
+    \item I 级回热器：\(\alpha_1(h_{01} - h_{02}') = h_{01}' - h_{02}'\)。
+    \item II 级回热器：\(\alpha_2(h_{02} - h_2') = (1 - \alpha_1)(h_{02}' - h_2')\)。
+  \end{itemize}
+
+  \item \textbf{状态参数获取与抽汽比验算}：
+
+  初态 \(h_1 \approx \qty{3475}{\kilo\joule\per\kilo\gram}\)；各级抽汽焓 \(h_{01} \approx \qty{2690}{\kilo\joule\per\kilo\gram}\)，\(h_{02} \approx \qty{2550}{\kilo\joule\per\kilo\gram}\)；排汽焓 \(h_2 \approx \qty{2030}{\kilo\joule\per\kilo\gram}\)。对应的各级饱和水焓约为 \(h_{01}' \approx \qty{605}{\kilo\joule\per\kilo\gram}\)，\(h_{02}' \approx \qty{510}{\kilo\joule\per\kilo\gram}\)，\(h_2' \approx \qty{138}{\kilo\joule\per\kilo\gram}\)。
+
+  解得抽汽系数：\(\alpha_1 \approx 0.044\)；\(\alpha_2 \approx 0.147\)。剩余排入凝汽器的份额 \(\alpha_0 = 1 - 0.044 - 0.147 = 0.809\)。
+
+  \item \textbf{汽轮机内功（\(w_0\)）计算}：
+  \begin{equation*}
+    w_0 = \alpha_1(h_1 - h_{01}) + \alpha_2(h_1 - h_{02}) + \alpha_0(h_1 - h_2)
+  \end{equation*}
+
+  代入数值验算：
+  \begin{equation*}
+    w_0 = 0.044 \times 785 + 0.147 \times 925 + 0.809 \times 1445 \approx \qty{1339.5}{\kilo\joule\per\kilo\gram}
+  \end{equation*}
+
+  \item \textbf{循环热效率（\(\eta_{TRG}\)）计算}：
+
+  循环总加热量：
+  \begin{equation*}
+    q_1 = h_1 - h_{01}' = 3475 - 605 = \qty{2870}{\kilo\joule\per\kilo\gram}
+  \end{equation*}
+
+  热效率公式：
+  \begin{equation*}
+    \eta_{TRG} = 1 - \frac{\alpha_0(h_2 - h_2')}{h_1 - h_{01}'}
+  \end{equation*}
+
+  代入数值验算：
+  \begin{equation*}
+    \eta_{TRG} = \frac{1339.5}{2870} \approx 46.7\%
+  \end{equation*}
+
+  \item \textbf{结论}：被抽出的 \(\alpha_1\)、\(\alpha_2\) 部分蒸汽作了功而没有向外放热（相当于该部分热效率达到了100\%），最终使锅炉中水的预热起点温度提高，工质在锅炉内的平均吸热温度也大幅提高，进而提升了整个循环的热效率。
+\end{itemize}
+\end{solution}
